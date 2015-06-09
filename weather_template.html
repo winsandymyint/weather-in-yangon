@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app='weatherApp'>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head> 
+<body ng-controller='weatherController'>
+	<div class="background-image"></div>
+	<div class="content">
+	  <div id="weather">
+	  		<h2>Weather in your city</h2>
+	  		<h4>City of Yangon, Myanmar<br />
+	  			<div id="date" class="left">
+	  				get at {{weather.date}}
+	  			</div>
+	  		</h4>
+
+	  		<div id="wtemp">
+	  			<div class="spacer"></div>
+	  			<span class="bold temp">{{weather.temp}} </span> C
+	  		</div>
+	  		<div class="spacer"></div>
+	  		
+	  		<div id="wind" class="left">
+	  			Wind: <span class="res">{{weather.wind}} mph</span> 
+	  		<br />
+	  		<div id="clouds" class="left">
+		  		Cloudiness: <span class="res">{{weather.clouds}}</span>
+		  	</div>
+	  		<div id="humid" class="left">
+	  			Humidity: <span class="res">{{weather.humidity}} %</span>
+	  		</div>
+	  		
+	  		<div class="spacer"></div>
+	  		<div id="btnWeather" ng-click="change()"><a href="#">Get Weather Data</a></div><br />
+	  	</div>
+	</div>
+	<script src="scripts/angular.js"></script>
+	<script src="controllers/weatherAppController.js"></script>
+	<script>
+		
+	</script>
+</body>
+</html>

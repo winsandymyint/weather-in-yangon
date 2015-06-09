@@ -1,0 +1,42 @@
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div#wtemp{
+  background: url("http://www.weather.com/sites/all/modules/custom/angularmods/app/shared/wxicon/svgz/mostly-sunny.svgz?1") no-repeat top left;
+  width: 200px;
+  height: 100px;
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+.spacer{
+  height: 20px;
+}
+.bold{
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+div#btnWeather{
+  padding: 10px;
+  border: 1px solid #000;
+  max-width: 200px;
+  text-align: center;
+  color: #000;
+}
+div#date{
+  font-size: 13px;
+  font-weight: lighter;
+}
+h2, body, h4{
+  font-family: Sans-serif;
+  font-weight: lighter;
+}
+.temp, #wtemp{
+  font-size: 28px;
+}
